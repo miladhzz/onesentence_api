@@ -5,6 +5,5 @@ from api.serializers import SentenceSerializer
 
 
 class SentenceView(viewsets.ModelViewSet):
-    http_method_names = ['get']
     queryset = Sentence.objects.all()
     serializer_class = SentenceSerializer
